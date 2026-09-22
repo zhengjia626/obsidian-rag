@@ -4,6 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Dependencies](https://img.shields.io/badge/dependencies-numpy%20%7C%20pyyaml-orange)](requirements.txt)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/zhengjia626/obsidian-rag/pulls)
+![Tests](https://github.com/zhengjia626/obsidian-rag/actions/workflows/tests.yml/badge.svg)
 
 把你的 Obsidian 笔记变成一个**可问答的本地知识库**。零 API Key 即可跑通（默认 TF-IDF 基线），
 后续可一键升级为语义向量 + LLM 生成。这是一个**教学 / 作品集骨架**：结构清晰、易扩展、clone 即运行。
@@ -167,7 +168,7 @@ llm:
 
 ## 下一步可扩展
 
-- [ ] 补充 `tests/` 单元测试（切分、嵌入维度一致性、检索排序）
+- [x] 补充 `tests/` 单元测试（切分、嵌入维度一致性、检索排序）
 - [x] 提供 Web UI（已实现 `app.py`，Streamlit 一行起服务，做成可在线演示）
 - [ ] 增量更新索引（只重建变更的笔记，而非每次全量）
 - [ ] 接入 Chroma / FAISS 等更专业的向量库
