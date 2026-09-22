@@ -1,9 +1,21 @@
 # Obsidian RAG 知识库
 
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Dependencies](https://img.shields.io/badge/dependencies-numpy%20%7C%20pyyaml-orange)](requirements.txt)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/zhengjia626/obsidian-rag/pulls)
+
 把你的 Obsidian 笔记变成一个**可问答的本地知识库**。零 API Key 即可跑通（默认 TF-IDF 基线），
 后续可一键升级为语义向量 + LLM 生成。这是一个**教学 / 作品集骨架**：结构清晰、易扩展、clone 即运行。
 
 > 适合作为「能跑、能讲清设计取舍」的公开项目——尤其适合刚入门 AI / 想积累 GitHub 作品集的同学。
+
+## 演示
+
+![demo](docs/demo.png)
+
+对示例笔记提问 `python rag.py ask "SSH 公钥 认证" --config config.yaml`，
+返回按相似度排序、带 `标题 › 章节 › 来源路径` 溯源信息的 top-k 片段。
 
 ## 特性
 
@@ -155,3 +167,7 @@ llm:
 
 > 提示：这是骨架项目，重点在于「能跑、能讲清设计取舍」。把它连上你真实的 Obsidian 仓库，
 > 再补一个 Web 演示，就是一份很有说服力的公开 GitHub 作品集。
+
+## 许可证
+
+本项目采用 [MIT License](LICENSE) 开源。
