@@ -17,6 +17,15 @@
 对示例笔记提问 `python rag.py ask "SSH 公钥 认证" --config config.yaml`，
 返回按相似度排序、带 `标题 › 章节 › 来源路径` 溯源信息的 top-k 片段。
 
+## Web界面
+
+![web](docs/web.png)
+
+```bash
+pip install streamlit
+streamlit run app.py
+```
+
 ## 特性
 
 - **解析 Obsidian Markdown**：自动剥离 frontmatter、保留 `[[wikilink|显示文本]]` 的显示文本
@@ -159,7 +168,7 @@ llm:
 ## 下一步可扩展
 
 - [ ] 补充 `tests/` 单元测试（切分、嵌入维度一致性、检索排序）
-- [ ] 提供 Web UI（Streamlit / Gradio 一行起服务，做成可在线演示）
+- [x] 提供 Web UI（已实现 `app.py`，Streamlit 一行起服务，做成可在线演示）
 - [ ] 增量更新索引（只重建变更的笔记，而非每次全量）
 - [ ] 接入 Chroma / FAISS 等更专业的向量库
 - [ ] 把检索结果做成可点击的 Obsidian 链接回跳

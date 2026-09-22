@@ -7,3 +7,6 @@ pyyaml>=6.0
 
 # 可选：接入 OpenAI 嵌入 / LLM 生成
 # openai>=1.0
+
+# 可选：Streamlit Web 界面（取消注释后 pip install -r requirements.txt）
+# streamlit>=1.30
