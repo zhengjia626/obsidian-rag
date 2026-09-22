@@ -1,0 +1,9 @@
+# 基础依赖（零依赖即可跑通 TF-IDF 基线）
+numpy>=1.24
+pyyaml>=6.0
+
+# 可选：升级为语义检索（取消注释后 pip install -r requirements.txt）
+# sentence-transformers>=2.2
+
+# 可选：接入 OpenAI 嵌入 / LLM 生成
+# openai>=1.0

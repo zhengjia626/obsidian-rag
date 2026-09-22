@@ -1,0 +1,27 @@
+# 复制为 config.yaml 后按需修改：cp config.example.yaml config.yaml
+
+# Obsidian 仓库根目录（放你自己的笔记库路径，例如 D:/obsidian-vault）
+vault_path: "./sample_vault"
+
+# 构建出的向量索引保存位置（已 gitignore）
+store_path: "./store/index.pkl"
+
+# 切分参数
+chunk_size: 500
+chunk_overlap: 80
+
+# 检索返回条数
+top_k: 5
+
+# 嵌入后端：tfidf（默认，零依赖可跑）| sentence-transformers | openai
+embedding:
+  backend: "tfidf"
+  model: null            # sentence-transformers 时填模型名，如 all-MiniLM-L6-v2
+  base_url: null         # openai 兼容网关地址（可选）
+
+# 问答生成：开启后调用 LLM 把检索到的片段综合成答案
+llm:
+  enabled: false
+  base_url: "https://api.openai.com/v1"
+  model: "gpt-4o-mini"
+  api_key_env: "OPENAI_API_KEY"

@@ -1,0 +1,14 @@
+# 虚拟环境
+.venv/
+
+# 本地配置（含路径与个人密钥，不入库）
+config.yaml
+
+# 构建产物（由 build 命令生成）
+store/
+*.pkl
+
+# Python 缓存
+__pycache__/
+*.pyc
+.env
